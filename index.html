@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of an Android Developer specializing in Android Automotive, AOSP, Android TV and Kotlin." />
-  <title>Hoang Thom — Android Developer</title>
+  <meta name="description" content="Hoang Thom — Android Developer specializing in AOSP, Android Automotive, Android TV and Kotlin." />
+  <title>Hoang Thom — Android Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,213 +15,257 @@
   <div class="grid-bg"></div>
 
   <header class="navbar">
-    <a class="logo" href="#home"><span>&lt;</span>thom.dev<span>/&gt;</span></a>
+    <a class="logo" href="#home"><span>&gt;_</span> thom.dev</a>
+
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about"><b>/01</b> About</a>
+      <a href="#skills"><b>/02</b> Skills</a>
+      <a href="#experience"><b>/03</b> Experience</a>
+      <a href="#projects"><b>/04</b> Projects</a>
+      <a href="#contact"><b>/05</b> Contact</a>
     </nav>
-    <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+
+    <a class="resume-btn" href="#" title="Replace with your resume URL">▣ Resume</a>
   </header>
 
   <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR NEW CHALLENGES</div>
-        <h1>Android Engineer<br><span class="accent">building systems</span><br>that just work.</h1>
-        <p class="hero-description">
-          Android Developer with nearly <strong>4 years of experience</strong>,
-          focused on AOSP, Android Automotive, Android TV and Kotlin.
-          I enjoy turning complex platform problems into reliable products.
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-photo-card">
+        <div class="photo-status"><span></span> ANDROID ENGINEER</div>
+
+        <div class="photo-wrap">
+          <img src="profile.jpg" alt="Portrait of Hoang Thom" />
+          <div class="photo-gradient"></div>
+        </div>
+
+        <div class="photo-caption">
+          <span>STATUS: <strong>BUILDING IMPACTFUL SYSTEMS</strong></span>
+          <i></i>
+        </div>
+      </div>
+
+      <div class="hero-intro">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1>Hoang Thom</h1>
+        <h2>Android Engineer</h2>
+
+        <div class="focus-line">
+          <span>AOSP</span><i></i>
+          <span>Automotive</span><i></i>
+          <span>Android TV</span>
+        </div>
+
+        <p class="hero-copy">
+          I build reliable, scalable, and user-centric solutions in the Android
+          ecosystem. Passionate about system-level development and creating
+          meaningful products.
         </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="button primary">View my work <span>→</span></a>
-          <a href="#contact" class="button secondary">Get in touch</a>
+        <div class="hero-tags">
+          <span>Kotlin</span>
+          <span>Java</span>
+          <span>AOSP</span>
+          <span>AAOS</span>
+          <span>Compose</span>
+          <span>KMP</span>
+        </div>
+
+        <div class="hero-links">
+          <a href="#" title="Replace with your GitHub URL">● GitHub</a>
+          <a href="#" title="Replace with your LinkedIn URL">▣ LinkedIn</a>
+          <a href="mailto:your.email@example.com">✉ Email</a>
+        </div>
+      </div>
+
+      <div class="code-panel">
+        <div class="editor-window">
+          <div class="editor-titlebar">
+            <span class="android-icon">●</span>
+            <span>AboutMe.kt</span>
+            <button>×</button>
+            <div class="window-controls"><i></i><i></i><i></i></div>
+          </div>
+
+          <pre><code><span class="line"><em>1</em>  <b>class</b> <strong>HoangThom</strong> {</span>
+<span class="line"><em>2</em>      <b>val</b> role = <s>"Android Engineer"</s></span>
+<span class="line"><em>3</em>      <b>val</b> focus = listOf(<s>"AOSP"</s>, <s>"AAOS"</s>,</span>
+<span class="line"><em>4</em>          <s>"Android TV"</s>)</span>
+<span class="line"><em>5</em>      <b>val</b> passion = <s>"Building systems that just work"</s></span>
+<span class="line"><em>6</em></span>
+<span class="line"><em>7</em>      <b>fun</b> <strong>currentMission</strong>() {</span>
+<span class="line"><em>8</em>          <b>return</b> listOf(</span>
+<span class="line"><em>9</em>              <s>"Deliver quality products"</s>,</span>
+<span class="line"><em>10</em>             <s>"Learn continuously"</s>,</span>
+<span class="line"><em>11</em>             <s>"Share knowledge"</s>,</span>
+<span class="line"><em>12</em>             <s>"Make an impact"</s></span>
+<span class="line"><em>13</em>         )</span>
+<span class="line"><em>14</em>     }</span>
+<span class="line"><em>15</em> }</span></code></pre>
         </div>
 
         <div class="terminal">
-          <div class="terminal-bar">
-            <span></span><span></span><span></span>
-            <small>developer@thom:~</small>
+          <div class="terminal-header">
+            <span>terminal</span>
+            <span>zsh⌄</span>
           </div>
           <div class="terminal-body">
-            <p><span class="prompt">$</span> whoami</p>
-            <p class="output">android_engineer</p>
-            <p><span class="prompt">$</span> cat focus.txt</p>
-            <p class="output">AOSP · Automotive · TV · Kotlin · System Design</p>
-            <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+            <p><b>thom@dev-machine:~$</b> whoami</p>
+            <p>Hoang Thom</p>
+            <p><b>thom@dev-machine:~$</b> cat mission.txt</p>
+            <p>Building reliable Android systems.</p>
+            <p>Solving real-world problems.</p>
+            <p>Growing every day.</p>
+            <p><b>thom@dev-machine:~$</b> <span class="cursor">█</span></p>
           </div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="code-card">
-          <div class="code-header">
-            <div class="window-dots"><i></i><i></i><i></i></div>
-            <span>AndroidDeveloper.kt</span>
-            <span class="file-status">●</span>
-          </div>
-          <pre><code><span class="kw">class</span> <span class="type">AndroidDeveloper</span> {
-
-  <span class="kw">val</span> experience = <span class="num">4</span>.years
-  <span class="kw">val</span> stack = listOf(
-      <span class="str">"Kotlin"</span>,
-      <span class="str">"AOSP"</span>,
-      <span class="str">"Compose"</span>,
-      <span class="str">"Android Automotive"</span>
-  )
-
-  <span class="kw">fun</span> <span class="fn">build</span>() {
-      solve(<span class="str">"hard problems"</span>)
-      ship(<span class="str">"reliable software"</span>)
-      keepLearning()
-  }
-}</code></pre>
-        </div>
-        <div class="floating-chip chip-one">KOTLIN</div>
-        <div class="floating-chip chip-two">AOSP</div>
-        <div class="floating-chip chip-three">COMPOSE</div>
-      </div>
-    </section>
-
-    <section id="about" class="section two-column">
-      <div>
-        <p class="section-label">// 01 — ABOUT ME</p>
-        <h2>I build close to the <span class="accent">Android platform.</span></h2>
-      </div>
-      <div class="about-copy">
-        <p>
-          I'm an Android Developer who enjoys working beyond the UI layer.
-          My experience spans Android Automotive, Android TV / AOSP and mobile Android,
-          with a strong interest in framework-level behavior, system services and
-          device-specific integrations.
-        </p>
-        <p>
-          Currently, I'm growing toward a Senior Android Engineer profile by going
-          deeper into platform technologies such as Bluetooth, Wi-Fi, Broadcast,
-          Navigation, Camera, system architecture and performance.
-        </p>
-        <div class="stats">
-          <div><strong>~4</strong><span>Years experience</span></div>
-          <div><strong>3+</strong><span>Years Automotive</span></div>
-          <div><strong>4</strong><span>Core platforms</span></div>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-title">
+        <span>&gt;_</span> ABOUT ME
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Android Developer with nearly <strong>4 years of experience</strong>
+            in the Android ecosystem. Around 3 years in Automotive (AAOS),
+            nearly 1 year in Android TV (AOSP) Set-Top Box, and earlier
+            experience in Mobile Android.
+          </p>
+          <p>
+            I enjoy working close to the system/framework layer, debugging
+            complex device behavior, optimizing performance and building
+            stable, maintainable features that provide great experiences.
+          </p>
+
+          <div class="about-meta">
+            <span>⌖ Vietnam</span>
+            <span>◷ Android Engineer</span>
+            <span>⌘ Kotlin / AOSP</span>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat"><strong>4+</strong><span>Years<br>Experience</span></div>
+          <div class="stat"><strong>3+</strong><span>Years in<br>Automotive</span></div>
+          <div class="stat"><strong>1+</strong><span>Year in<br>Android TV</span></div>
+          <div class="stat"><strong>1+</strong><span>Year<br>Mobile Android</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section id="skills" class="section">
-      <p class="section-label">// 02 — TECH STACK</p>
-      <div class="section-heading">
-        <h2>Tools I work with</h2>
-        <span class="mono">01 / 04</span>
-      </div>
+      <div class="section-title"><span>&gt;_</span> TECH STACK</div>
 
-      <div class="skills-grid">
-        <article class="skill-card">
-          <span class="skill-number">01</span>
-          <h3>Android</h3>
-          <p>Platform & application development across different Android form factors.</p>
-          <div class="tags"><span>Kotlin</span><span>Java</span><span>Compose</span><span>XML</span></div>
-        </article>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3>⌘ Languages</h3>
+          <div class="tags"><span>Kotlin</span><span>Java</span></div>
+        </div>
 
-        <article class="skill-card featured">
-          <span class="skill-number">02</span>
-          <h3>AOSP / Framework</h3>
-          <p>System-level development, custom services, settings, receivers and platform debugging.</p>
-          <div class="tags"><span>AOSP</span><span>Framework</span><span>System Service</span><span>ADB</span></div>
-        </article>
+        <div class="stack-card">
+          <h3>● Android</h3>
+          <div class="tags"><span>AOSP</span><span>AAOS</span><span>Android TV</span><span>Jetpack</span></div>
+        </div>
 
-        <article class="skill-card">
-          <span class="skill-number">03</span>
-          <h3>Architecture</h3>
-          <p>Clean, maintainable application structure with reactive state and dependency injection.</p>
+        <div class="stack-card">
+          <h3>✎ UI</h3>
+          <div class="tags"><span>XML</span><span>Jetpack Compose</span><span>Material 3</span></div>
+        </div>
+
+        <div class="stack-card">
+          <h3>▱ Architecture</h3>
           <div class="tags"><span>MVVM</span><span>Clean Architecture</span><span>Flow</span><span>Hilt</span></div>
-        </article>
+        </div>
 
-        <article class="skill-card">
-          <span class="skill-number">04</span>
-          <h3>Platform Domains</h3>
-          <p>Exploring deeper Android subsystems and device integrations.</p>
-          <div class="tags"><span>Bluetooth</span><span>Wi-Fi</span><span>Broadcast</span><span>Camera</span></div>
-        </article>
+        <div class="stack-card">
+          <h3>⚒ Tools</h3>
+          <div class="tags"><span>Git</span><span>Gradle</span><span>ADB</span><span>Jira</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <p class="section-label">// 03 — EXPERIENCE</p>
-      <h2>Where I've been <span class="accent">&amp; what I learned.</span></h2>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="section-title"><span>&gt;_</span> EXPERIENCE</div>
+      <h2>Close to the platform.<br><span>Focused on the details.</span></h2>
 
       <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">~3 YEARS · CURRENT / RECENT</div>
-          <h3>Android Automotive / AOSP</h3>
-          <p>
-            Worked on Android Automotive platform projects, dealing with AOSP,
-            framework-level components, device behavior, OTA flows, standby/resume,
-            key events, system services and hardware-specific integrations.
-          </p>
-          <div class="tags"><span>AAOS</span><span>AOSP</span><span>OTA</span><span>System Services</span></div>
+        <article>
+          <div class="timeline-index">01</div>
+          <div>
+            <small>~3 YEARS</small>
+            <h3>Android Automotive / AOSP</h3>
+            <p>
+              AOSP and AAOS development across framework-level components,
+              custom services, device behavior, OTA flows, standby/resume,
+              key events and hardware-specific integrations.
+            </p>
+            <div class="tags"><span>AAOS</span><span>AOSP</span><span>OTA</span><span>System Services</span></div>
+          </div>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">~1 YEAR · ANDROID TV</div>
-          <h3>Android TV / Set-Top Box</h3>
-          <p>
-            Built and debugged Android TV experiences at the platform layer,
-            including custom settings, welcome flows, launcher behavior, Live TV,
-            DRM, standby scenarios and remote-control integrations.
-          </p>
-          <div class="tags"><span>Android TV</span><span>STB</span><span>DRM</span><span>Live TV</span></div>
+        <article>
+          <div class="timeline-index">02</div>
+          <div>
+            <small>~1 YEAR</small>
+            <h3>Android TV / Set-Top Box</h3>
+            <p>
+              Platform development and debugging for Android TV, including
+              custom settings, welcome flow, launcher behavior, Live TV,
+              DRM, standby scenarios and remote-control integrations.
+            </p>
+            <div class="tags"><span>Android TV</span><span>STB</span><span>DRM</span><span>Live TV</span></div>
+          </div>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">EARLIER · MOBILE ANDROID</div>
-          <h3>Android Developer Intern</h3>
-          <p>
-            Built a foundation in Android application development and learned the
-            fundamentals that later evolved into platform-oriented engineering.
-          </p>
-          <div class="tags"><span>Android</span><span>Kotlin</span><span>Java</span></div>
+        <article>
+          <div class="timeline-index">03</div>
+          <div>
+            <small>EARLIER</small>
+            <h3>Mobile Android Internship</h3>
+            <p>
+              Built the foundation in Android application development and
+              learned the fundamentals that later evolved into platform-oriented engineering.
+            </p>
+            <div class="tags"><span>Android</span><span>Kotlin</span><span>Java</span></div>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section">
-      <p class="section-label">// 04 — SELECTED PROJECTS</p>
-      <div class="section-heading">
-        <h2>Things I've been building</h2>
-        <span class="mono">PROJECTS / 2026</span>
-      </div>
+      <div class="section-title"><span>&gt;_</span> SELECTED PROJECTS</div>
 
       <div class="projects-grid">
-        <article class="project-card project-large">
-          <div class="project-top"><span>01</span><span>PERSONAL PROJECT</span></div>
-          <div class="project-icon">◎</div>
+        <article class="project project-featured">
+          <small>01 / PERSONAL PROJECT</small>
+          <div class="project-symbol">◎</div>
           <h3>ODDLY</h3>
           <p>
-            An experimental social concept around the idea of finding small,
-            unexpected human moments in everyday life.
+            An experimental social concept around finding small, unexpected
+            human moments in everyday life.
           </p>
           <div class="tags"><span>Kotlin</span><span>Compose</span><span>UX</span></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top"><span>02</span><span>PERSONAL PROJECT</span></div>
-          <div class="project-icon">♡</div>
+        <article class="project">
+          <small>02 / PERSONAL PROJECT</small>
+          <div class="project-symbol">♡</div>
           <h3>OurLove</h3>
           <p>A couples memory app built with Compose, local data, widgets and thoughtful interactions.</p>
           <div class="tags"><span>Compose</span><span>Hilt</span><span>Widgets</span></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top"><span>03</span><span>CONCEPT</span></div>
-          <div class="project-icon">⌖</div>
+        <article class="project">
+          <small>03 / CONCEPT</small>
+          <div class="project-symbol">⌖</div>
           <h3>Ghost Diary</h3>
           <p>Anonymous diary entries anchored to real-world coordinates and revealed through exploration.</p>
           <div class="tags"><span>Location</span><span>Maps</span><span>Compose</span></div>
@@ -229,37 +273,39 @@
       </div>
     </section>
 
-    <section class="section learning">
-      <div class="learning-box">
+    <!-- MISSION -->
+    <section class="section mission">
+      <div class="mission-box">
         <div>
-          <p class="section-label">// CURRENT MISSION</p>
-          <h2>From <span class="accent">Android Developer</span> to Senior Engineer.</h2>
+          <div class="section-title"><span>&gt;_</span> CURRENT MISSION</div>
+          <h2>From Android Developer<br>to <span>Senior Engineer.</span></h2>
         </div>
         <p>
-          Deepening platform knowledge, improving system design skills, building
-          practical projects and continuously improving technical English.
+          Deepening platform knowledge, improving system design skills,
+          building practical projects and continuously improving technical English.
         </p>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
-      <p class="section-label">// 05 — CONTACT</p>
-      <h2>Let's build something<br><span class="accent">interesting.</span></h2>
-      <p class="contact-copy">Have a project, opportunity or technical problem worth discussing?</p>
-      <a class="email" href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com <span>↗</span></a>
+      <div class="section-title"><span>&gt;_</span> CONTACT</div>
+      <h2>Let's build something<br><span>interesting.</span></h2>
+      <p>Have a project, opportunity or technical problem worth discussing?</p>
+      <a class="email" href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com ↗</a>
 
-      <div class="socials">
-        <a href="#" aria-label="GitHub">GitHub ↗</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn ↗</a>
-        <a href="#" aria-label="Resume">Resume ↗</a>
+      <div class="contact-links">
+        <a href="#">GitHub ↗</a>
+        <a href="#">LinkedIn ↗</a>
+        <a href="#">Resume ↗</a>
       </div>
     </section>
   </main>
 
   <footer>
     <span>© 2026 Hoang Thom</span>
-    <span class="mono">BUILT WITH HTML + CSS</span>
-    <span class="mono">ANDROID / AOSP / KOTLIN</span>
+    <span>BUILT WITH HTML + CSS</span>
+    <span>ANDROID / AOSP / KOTLIN</span>
   </footer>
 </body>
 </html>
