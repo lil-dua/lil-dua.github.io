@@ -107,6 +107,11 @@ nav a.is-active b { color: var(--text); }
   border-radius: 7px;
   color: var(--green);
   font: 500 10px var(--mono);
+  transition: background .2s, border-color .2s;
+}
+.resume-btn:hover {
+  background: var(--green-soft);
+  border-color: #46622e;
 }
 
 .hero {
@@ -628,7 +633,9 @@ nav a.is-active b { color: var(--text); }
   color: #89928e;
   font: 10px var(--mono);
 }
+.contact-links a { transition: color .2s; }
 .contact-links a:hover { color: var(--green); }
+.contact-links .link-download { color: var(--green); }
 
 footer {
   width: min(calc(100% - 60px), var(--max));
