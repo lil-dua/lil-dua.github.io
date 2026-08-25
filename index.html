@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            color: var(--accent-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Header -->
+        <header>
+            <h1>Alex Morgan</h1>
+            <p class="subtitle">Full-Stack Software Engineer</p>
+            <p class="bio">Building clean, scalable web applications and accessible digital experiences. Passionate about performance and user-centered design.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a> • 
+                <a href="#">LinkedIn</a> • 
+                <a href="#">Twitter</a> • 
+                <a href="mailto:alex@example.com">Email</a>
+            </div>
+        </header>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">REST APIs</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div>
+                        <h3>Task Manager App</h3>
+                        <p>A full-stack productivity tool with real-time collaboration, drag-and-drop boards, and automated email notifications.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">View Live →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3>DevMetrics API</h3>
+                        <p>A lightweight RESTful service that tracks repository metrics and generates automated performance summaries.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">View Source →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Alex Morgan. Built with HTML & CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
