@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hoang Thom — Android Developer specializing in AOSP, Android Automotive, Android TV and Kotlin." />
+  <meta name="description" content="Hoang Huu Thom — Android Developer specializing in AOSP, Android Automotive, Android TV / Set-Top Box and Kotlin." />
   <title>Hoang Thom — Android Engineer</title>
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
 
 <body>
   <div class="grid-bg"></div>
+  <div class="scroll-progress"></div>
 
   <header class="navbar">
     <a class="logo" href="#home"><span>&gt;_</span> thom.dev</a>
@@ -68,13 +70,13 @@
           <span>AOSP</span>
           <span>AAOS</span>
           <span>Compose</span>
-          <span>KMP</span>
+          <span>Docker</span>
         </div>
 
         <div class="hero-links">
           <a href="#" title="Replace with your GitHub URL">● GitHub</a>
-          <a href="#" title="Replace with your LinkedIn URL">▣ LinkedIn</a>
-          <a href="mailto:your.email@example.com">✉ Email</a>
+          <a href="https://www.linkedin.com/in/ryanhoang21/" target="_blank" rel="noopener">▣ LinkedIn</a>
+          <a href="mailto:huuthom.it@gmail.com">✉ Email</a>
         </div>
       </div>
 
@@ -112,7 +114,7 @@
           <div class="terminal-body">
             <p><b>thom@dev-machine:~$</b> whoami</p>
             <p>Hoang Thom</p>
-            <p><b>thom@dev-machine:~$</b> cat mission.txt</p>
+            <p><b>thom@dev-machine:~$</b> docker run -it aosp-stb-build:latest</p>
             <p>Building reliable Android systems.</p>
             <p>Solving real-world problems.</p>
             <p>Growing every day.</p>
@@ -124,12 +126,12 @@
 
     <!-- ABOUT -->
     <section id="about" class="section about">
-      <div class="section-title">
+      <div class="section-title reveal">
         <span>&gt;_</span> ABOUT ME
       </div>
 
       <div class="about-grid">
-        <div class="about-copy">
+        <div class="about-copy reveal">
           <p>
             Android Developer with nearly <strong>4 years of experience</strong>
             in the Android ecosystem. Around 3 years in Automotive (AAOS),
@@ -140,16 +142,19 @@
             I enjoy working close to the system/framework layer, debugging
             complex device behavior, optimizing performance and building
             stable, maintainable features that provide great experiences.
+            Day to day I work with <strong>Kotlin, Java, AOSP/Soong builds,
+            AIDL and SE Linux</strong>, and I run my Set-Top Box build and
+            flashing environment inside <strong>Docker</strong>.
           </p>
 
           <div class="about-meta">
-            <span>⌖ Vietnam</span>
+            <span>⌖ Ha Noi, Viet Nam</span>
             <span>◷ Android Engineer</span>
             <span>⌘ Kotlin / AOSP</span>
           </div>
         </div>
 
-        <div class="stats-grid">
+        <div class="stats-grid reveal reveal-scale">
           <div class="stat"><strong>4+</strong><span>Years<br>Experience</span></div>
           <div class="stat"><strong>3+</strong><span>Years in<br>Automotive</span></div>
           <div class="stat"><strong>1+</strong><span>Year in<br>Android TV</span></div>
@@ -160,91 +165,155 @@
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <div class="section-title"><span>&gt;_</span> TECH STACK</div>
+      <div class="section-title reveal"><span>&gt;_</span> TECH STACK</div>
 
-      <div class="stack-grid">
-        <div class="stack-card">
+      <div class="stack-grid stagger">
+        <div class="stack-card reveal">
           <h3>⌘ Languages</h3>
-          <div class="tags"><span>Kotlin</span><span>Java</span></div>
+          <div class="tags"><span>Kotlin</span><span>Java</span><span>SQL</span></div>
         </div>
 
-        <div class="stack-card">
-          <h3>● Android</h3>
-          <div class="tags"><span>AOSP</span><span>AAOS</span><span>Android TV</span><span>Jetpack</span></div>
+        <div class="stack-card reveal">
+          <h3>● Android Platform</h3>
+          <div class="tags"><span>AOSP</span><span>AAOS</span><span>Android TV</span><span>System Services</span><span>AIDL</span><span>SE Linux</span></div>
         </div>
 
-        <div class="stack-card">
+        <div class="stack-card reveal">
           <h3>✎ UI</h3>
-          <div class="tags"><span>XML</span><span>Jetpack Compose</span><span>Material 3</span></div>
+          <div class="tags"><span>Jetpack Compose</span><span>XML</span><span>Material 3</span><span>Jetpack</span></div>
         </div>
 
-        <div class="stack-card">
+        <div class="stack-card reveal">
           <h3>▱ Architecture</h3>
-          <div class="tags"><span>MVVM</span><span>Clean Architecture</span><span>Flow</span><span>Hilt</span></div>
+          <div class="tags"><span>MVVM</span><span>Clean Architecture</span><span>Hilt / DI</span><span>Coroutines</span><span>Flow</span><span>RxJava</span></div>
         </div>
 
-        <div class="stack-card">
+        <div class="stack-card reveal">
+          <h3>⛁ Data</h3>
+          <div class="tags"><span>Room</span><span>SQLite</span><span>Firebase</span><span>MySQL</span><span>REST API</span><span>JSON / GSON</span></div>
+        </div>
+
+        <div class="stack-card reveal">
+          <h3>✓ Quality</h3>
+          <div class="tags"><span>Unit Testing</span><span>UI Testing</span><span>Performance Tuning</span><span>Debugging</span></div>
+        </div>
+
+        <div class="stack-card reveal">
+          <h3>⬢ Build &amp; Environment</h3>
+          <div class="tags"><span class="tag-hl">Docker</span><span>Soong / Make</span><span>Gradle</span><span>Linux (Ubuntu)</span><span>Shell</span></div>
+        </div>
+
+        <div class="stack-card reveal">
           <h3>⚒ Tools</h3>
-          <div class="tags"><span>Git</span><span>Gradle</span><span>ADB</span><span>Jira</span></div>
+          <div class="tags"><span>Git</span><span>Gerrit</span><span>GitHub</span><span>ADB</span><span>Jira</span><span>Enterprise Architect</span></div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section experience">
-      <div class="section-title"><span>&gt;_</span> EXPERIENCE</div>
-      <h2>Close to the platform.<br><span>Focused on the details.</span></h2>
+      <div class="section-title reveal"><span>&gt;_</span> EXPERIENCE</div>
+      <h2 class="reveal">Close to the platform.<br><span>Focused on the details.</span></h2>
 
       <div class="timeline">
-        <article>
+        <article class="reveal">
           <div class="timeline-index">01</div>
           <div>
-            <small>~3 YEARS</small>
-            <h3>Android Automotive / AOSP</h3>
+            <small>CURRENT · ~1 YEAR</small>
+            <h3>Android TV / Set-Top Box <span class="company">— AOSP Platform</span></h3>
             <p>
-              AOSP and AAOS development across framework-level components,
-              custom services, device behavior, OTA flows, standby/resume,
-              key events and hardware-specific integrations.
+              Platform development and debugging for Android TV Set-Top Box:
+              custom settings, welcome flow, launcher behavior, Live TV, DRM,
+              standby / resume scenarios and remote-control integrations.
+              I build and flash the platform from a <strong>Docker</strong>-based
+              AOSP build environment, which keeps the toolchain, Soong/Make
+              targets and dependencies reproducible across machines and CI.
             </p>
-            <div class="tags"><span>AAOS</span><span>AOSP</span><span>OTA</span><span>System Services</span></div>
+            <div class="tags"><span>Android TV</span><span>STB</span><span>AOSP</span><span class="tag-hl">Docker</span><span>Soong</span><span>DRM</span><span>Live TV</span></div>
           </div>
         </article>
 
-        <article>
+        <article class="reveal">
           <div class="timeline-index">02</div>
           <div>
-            <small>~1 YEAR</small>
-            <h3>Android TV / Set-Top Box</h3>
+            <small>JAN 2024 — PRESENT · ~3 YEARS IN AUTOMOTIVE</small>
+            <h3>Android Automotive Developer <span class="company">— FPT Automotive</span></h3>
             <p>
-              Platform development and debugging for Android TV, including
-              custom settings, welcome flow, launcher behavior, Live TV,
-              DRM, standby scenarios and remote-control integrations.
+              AOSP and AAOS development on the Android-based AVN application
+              layer for luxury vehicles: framework-level components, custom
+              system services, device behavior, OTA flows, standby/resume,
+              key events and hardware-specific integrations. Wrote unit and UI
+              tests, tuned performance, and produced SAD/SDD design documents.
             </p>
-            <div class="tags"><span>Android TV</span><span>STB</span><span>DRM</span><span>Live TV</span></div>
+            <div class="tags"><span>AAOS</span><span>AOSP</span><span>Kotlin</span><span>Jetpack Compose</span><span>AIDL</span><span>SE Linux</span><span>Soong build</span><span>OTA</span></div>
           </div>
         </article>
 
-        <article>
+        <article class="reveal">
           <div class="timeline-index">03</div>
           <div>
-            <small>EARLIER</small>
-            <h3>Mobile Android Internship</h3>
+            <small>AUG 2023 — JAN 2024</small>
+            <h3>Android Developer <span class="company">— FPT Software</span></h3>
             <p>
-              Built the foundation in Android application development and
-              learned the fundamentals that later evolved into platform-oriented engineering.
+              Native Android development for Social and Finance products —
+              feature work with Kotlin/Java, XML UI, Coroutines and Firebase,
+              working directly with customers on requirements and demos.
             </p>
-            <div class="tags"><span>Android</span><span>Kotlin</span><span>Java</span></div>
+            <div class="tags"><span>Android Native</span><span>Kotlin</span><span>Java</span><span>XML</span><span>Coroutines</span><span>Firebase</span></div>
           </div>
+        </article>
+
+        <article class="reveal">
+          <div class="timeline-index">04</div>
+          <div>
+            <small>MAY 2023 — AUG 2023</small>
+            <h3>Fresher Android Developer <span class="company">— FPT Software Academy</span></h3>
+            <p>
+              Intensive Android training (Java, Kotlin, Android Basic and
+              Advanced) with code managed in GitLab — the foundation that later
+              evolved into platform-oriented engineering.
+            </p>
+            <div class="tags"><span>Android</span><span>Kotlin</span><span>Java</span><span>GitLab</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- EDUCATION & CERTIFICATIONS -->
+      <div class="section-title sub-title reveal"><span>&gt;_</span> EDUCATION &amp; CERTIFICATIONS</div>
+
+      <div class="credentials stagger">
+        <article class="credential reveal">
+          <small>2019 — 2024</small>
+          <h3>Academy of Cryptography Techniques</h3>
+          <p>Software Engineering — GPA 3.1. Majoring in mobile and embedded programming.</p>
+        </article>
+
+        <article class="credential reveal">
+          <small>CERTIFICATION</small>
+          <h3>Android Certified Application Developer</h3>
+          <p>AND-X01 — androidatc.com</p>
+        </article>
+
+        <article class="credential reveal">
+          <small>CERTIFICATION</small>
+          <h3>Java (Basic) — HackerRank</h3>
+          <p>Verified Java fundamentals certificate.</p>
+        </article>
+
+        <article class="credential reveal">
+          <small>ENGLISH</small>
+          <h3>TOEIC 730</h3>
+          <p>Reads and understands technical documentation in English.</p>
         </article>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-      <div class="section-title"><span>&gt;_</span> SELECTED PROJECTS</div>
+      <div class="section-title reveal"><span>&gt;_</span> SELECTED PROJECTS</div>
 
-      <div class="projects-grid">
-        <article class="project project-featured">
+      <div class="projects-grid stagger">
+        <article class="project project-featured reveal">
           <small>01 / PERSONAL PROJECT</small>
           <div class="project-symbol">◎</div>
           <h3>ODDLY</h3>
@@ -255,15 +324,15 @@
           <div class="tags"><span>Kotlin</span><span>Compose</span><span>UX</span></div>
         </article>
 
-        <article class="project">
+        <article class="project reveal">
           <small>02 / PERSONAL PROJECT</small>
           <div class="project-symbol">♡</div>
           <h3>OurLove</h3>
           <p>A couples memory app built with Compose, local data, widgets and thoughtful interactions.</p>
-          <div class="tags"><span>Compose</span><span>Hilt</span><span>Widgets</span></div>
+          <div class="tags"><span>Compose</span><span>Hilt</span><span>Room</span><span>Widgets</span></div>
         </article>
 
-        <article class="project">
+        <article class="project reveal">
           <small>03 / CONCEPT</small>
           <div class="project-symbol">⌖</div>
           <h3>Ghost Diary</h3>
@@ -275,7 +344,7 @@
 
     <!-- MISSION -->
     <section class="section mission">
-      <div class="mission-box">
+      <div class="mission-box reveal">
         <div>
           <div class="section-title"><span>&gt;_</span> CURRENT MISSION</div>
           <h2>From Android Developer<br>to <span>Senior Engineer.</span></h2>
@@ -289,14 +358,14 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section contact">
-      <div class="section-title"><span>&gt;_</span> CONTACT</div>
-      <h2>Let's build something<br><span>interesting.</span></h2>
-      <p>Have a project, opportunity or technical problem worth discussing?</p>
-      <a class="email" href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com ↗</a>
+      <div class="section-title reveal"><span>&gt;_</span> CONTACT</div>
+      <h2 class="reveal">Let's build something<br><span>interesting.</span></h2>
+      <p class="reveal">Have a project, opportunity or technical problem worth discussing?</p>
+      <a class="email reveal" href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com ↗</a>
 
-      <div class="contact-links">
+      <div class="contact-links reveal">
         <a href="#">GitHub ↗</a>
-        <a href="#">LinkedIn ↗</a>
+        <a href="https://www.linkedin.com/in/ryanhoang21/" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a href="#">Resume ↗</a>
       </div>
     </section>
@@ -307,5 +376,65 @@
     <span>BUILT WITH HTML + CSS</span>
     <span>ANDROID / AOSP / KOTLIN</span>
   </footer>
+
+  <script>
+    (function () {
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items = document.querySelectorAll('.reveal');
+
+      // stagger children inside containers marked .stagger
+      document.querySelectorAll('.stagger').forEach(function (group) {
+        var i = 0;
+        Array.prototype.forEach.call(group.children, function (child) {
+          if (child.classList.contains('reveal')) {
+            child.style.setProperty('--d', (i * 90) + 'ms');
+            i++;
+          }
+        });
+      });
+
+      if (reduced || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        items.forEach(function (el) { io.observe(el); });
+      }
+
+      // scroll progress bar + navbar state
+      var bar = document.querySelector('.scroll-progress');
+      var navbar = document.querySelector('.navbar');
+      var links = document.querySelectorAll('nav a[href^="#"]');
+      var sections = Array.prototype.map.call(links, function (a) {
+        return document.querySelector(a.getAttribute('href'));
+      });
+      var ticking = false;
+
+      function onScroll() {
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        var y = window.scrollY;
+        if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+        if (navbar) navbar.classList.toggle('is-scrolled', y > 24);
+
+        var current = -1;
+        sections.forEach(function (sec, i) {
+          if (sec && sec.getBoundingClientRect().top <= window.innerHeight * 0.35) current = i;
+        });
+        links.forEach(function (a, i) { a.classList.toggle('is-active', i === current); });
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+      }, { passive: true });
+      onScroll();
+    })();
+  </script>
 </body>
 </html>
