@@ -541,6 +541,13 @@ nav a.is-active b { color: var(--text); }
   font: 500 15px/1.4 var(--mono);
   margin: 10px 0 8px;
 }
+.credential h3 a { transition: color .2s; }
+.credential h3 a:hover { color: var(--green); }
+.credential h3 a span {
+  color: var(--green);
+  font-size: .7em;
+  vertical-align: top;
+}
 .credential p {
   color: #8f9995;
   font: 11px/1.75 var(--mono);
