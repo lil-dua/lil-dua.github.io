@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--
+  Trang công khai gộp Chính sách quyền riêng tư + Điều khoản sử dụng của Chăm Xe Việt.
+  Dùng cho đường dẫn bắt buộc khi nộp Google Play / App Store.
+
+  Nội dung PHẢI khớp với:
+    - docs/privacy-policy.md
+    - docs/terms-of-service.md
+    - sharedLogic/src/commonMain/kotlin/dev/lildua/chamxeviet/presentation/support/SupportContent.kt
+  Sửa một nơi thì sửa cả bốn, và nhớ đổi ngày cập nhật ở hai chỗ có chữ "Cập nhật".
+
+  Trang này không gọi tài nguyên ngoài (không font, không script, không ảnh) nên deploy ở
+  GitHub Pages, Cloudflare Pages hay bất kỳ hosting tĩnh nào cũng chạy được, kể cả khi mở offline.
+  Neo liên kết: #quyen-rieng-tu và #dieu-khoan
+-->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư & Điều khoản — Chăm Xe Việt</title>
+<meta name="description" content="Chính sách quyền riêng tư và điều khoản sử dụng của ứng dụng Chăm Xe Việt: dữ liệu lưu trên máy, không máy chủ, không bán dữ liệu.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Chính sách quyền riêng tư & Điều khoản — Chăm Xe Việt">
+<meta property="og:description" content="Dữ liệu xe của bạn nằm trên máy bạn. Không tài khoản, không máy chủ, không bán dữ liệu.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20108%20108%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%234C6FFF%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%237B5CFF%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27108%27%20height%3D%27108%27%20rx%3D%2726%27%20fill%3D%27url%28%23g%29%27%2F%3E%3Cpath%20d%3D%22M39.00%2C79.98%20C27.24%2C73.19%2021.51%2C59.35%2025.02%2C46.24%20C28.54%2C33.12%2040.42%2C24.00%2054.00%2C24.00%20C67.58%2C24.00%2079.46%2C33.12%2082.98%2C46.24%20C86.49%2C59.35%2080.76%2C73.19%2069.00%2C79.98%22%20fill%3D%27none%27%20stroke%3D%27%23FFB020%27%20stroke-width%3D%275%27%20stroke-linecap%3D%27round%27%2F%3E%3Cg%20transform%3D%27translate%2835.4%2C35.4%29%20scale%281.55%29%27%3E%3Cpath%20d%3D%22M18.92%2C6.01C18.72%2C5.42%2018.16%2C5%2017.5%2C5h-11c-0.66%2C0%20-1.21%2C0.42%20-1.42%2C1.01L3%2C12v8c0%2C0.55%200.45%2C1%201%2C1h1c0.55%2C0%201%2C-0.45%201%2C-1v-1h12v1c0%2C0.55%200.45%2C1%201%2C1h1c0.55%2C0%201%2C-0.45%201%2C-1v-8l-2.08%2C-5.99zM6.5%2C16c-0.83%2C0%20-1.5%2C-0.67%20-1.5%2C-1.5S5.67%2C13%206.5%2C13s1.5%2C0.67%201.5%2C1.5S7.33%2C16%206.5%2C16zM17.5%2C16c-0.83%2C0%20-1.5%2C-0.67%20-1.5%2C-1.5s0.67%2C-1.5%201.5%2C-1.5%201.5%2C0.67%201.5%2C1.5%20-0.67%2C1.5%20-1.5%2C1.5zM5%2C11l1.5%2C-4.5h11L19%2C11L5%2C11z%22%20fill%3D%27%23fff%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<style>
+  /* ---- Token màu, lấy đúng bảng màu của app ---- */
+  :root {
+    --text-primary: #1B2440;
+    --text-secondary: #4A5570;
+    --text-tertiary: #5E6A85;
+    --primary: #2F6BFF;
+    --aurora-top: #DCE6FF;
+    --aurora-bottom: #F4E9FC;
+    --blob-1: rgba(168, 195, 255, .85);
+    --blob-2: rgba(255, 199, 226, .80);
+    --blob-3: rgba(210, 204, 255, .75);
+    --blob-4: rgba(228, 213, 255, .75);
+    --blob-5: rgba(187, 228, 255, .70);
+    --glass-top: rgba(255, 255, 255, .70);
+    --glass-bottom: rgba(255, 255, 255, .50);
+    --glass-stroke-top: rgba(255, 255, 255, .90);
+    --glass-stroke-mid: rgba(255, 255, 255, .40);
+    --glass-stroke-bottom: rgba(255, 255, 255, .62);
+    --glass-sheen: rgba(255, 255, 255, .32);
+    --glass-shadow: rgba(42, 58, 124, .10);
+    --grain-opacity: .028;
+    --divider: rgba(27, 36, 64, .08);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text-primary: #F1F4FF;
+      --text-secondary: #B4BDD3;
+      --text-tertiary: #98A2B8;
+      --primary: #5B8CFF;
+      --aurora-top: #0B1022;
+      --aurora-bottom: #120E28;
+      --blob-1: rgba(26, 59, 143, .85);
+      --blob-2: rgba(90, 29, 92, .80);
+      --blob-3: rgba(42, 33, 112, .75);
+      --blob-4: rgba(36, 21, 74, .75);
+      --blob-5: rgba(15, 58, 92, .70);
+      --glass-top: rgba(255, 255, 255, .16);
+      --glass-bottom: rgba(255, 255, 255, .06);
+      --glass-stroke-top: rgba(255, 255, 255, .38);
+      --glass-stroke-mid: rgba(255, 255, 255, .05);
+      --glass-stroke-bottom: rgba(255, 255, 255, .16);
+      --glass-sheen: rgba(255, 255, 255, .18);
+      --glass-shadow: rgba(0, 0, 0, .45);
+      --grain-opacity: .07;
+      --divider: rgba(255, 255, 255, .10);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    background: linear-gradient(180deg, var(--aurora-top), var(--aurora-bottom)) fixed;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Nền aurora: 5 mảng màu lớn, mềm, tràn ra ngoài mép — để tấm kính có cái mà lọc. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -10%;
+    z-index: -2;
+    background:
+      radial-gradient(60% 45% at -5% 30%, var(--blob-1), transparent 70%),
+      radial-gradient(55% 40% at 105% 50%, var(--blob-2), transparent 70%),
+      radial-gradient(45% 35% at 90% 0%, var(--blob-3), transparent 70%),
+      radial-gradient(55% 40% at 15% 100%, var(--blob-4), transparent 70%),
+      radial-gradient(40% 30% at 50% 15%, var(--blob-5), transparent 70%);
+  }
+
+  .shell { max-width: 760px; margin: 0 auto; }
+
+  /* ---- Bề mặt kính: nền chéo → hạt nhiễu → vệt sáng → viền bắt sáng ---- */
+  .glass {
+    position: relative;
+    isolation: isolate;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--glass-top), var(--glass-bottom));
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    backdrop-filter: blur(24px) saturate(150%);
+    box-shadow: 0 12px 30px var(--glass-shadow);
+    overflow: hidden;
+  }
+
+  /* Hạt nhiễu mịn giả bề mặt kính mờ (SVG sinh tại chỗ, không tải ảnh ngoài). */
+  .glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Vệt sáng hắt từ góc trên trái + viền bắt sáng chéo. Nguồn sáng quy ước: trên-trái. */
+  .glass::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(135deg, var(--glass-sheen), transparent 55%);
+    box-shadow: inset 0 0 0 1px transparent;
+    border: 1px solid transparent;
+    background-origin: border-box;
+    -webkit-mask: linear-gradient(#fff 0 0);
+  }
+
+  .glass > .edge {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    pointer-events: none;
+    background: linear-gradient(135deg, var(--glass-stroke-top), var(--glass-stroke-mid) 45%, var(--glass-stroke-bottom));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+  }
+
+  /* ---- Header ---- */
+  header {
+    margin: 40px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .app-icon {
+    width: 64px;
+    height: 64px;
+    flex: none;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(47, 107, 255, .28);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(24px, 5vw, 32px);
+    line-height: 1.2;
+    color: var(--text-primary);
+    letter-spacing: -0.4px;
+  }
+
+  .tagline { margin: 4px 0 0; color: var(--text-tertiary); font-size: 15px; }
+
+  .updated {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+    background: rgba(47, 107, 255, .12);
+  }
+
+  /* ---- Mục lục ---- */
+  nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
+
+  nav a {
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--glass-top), var(--glass-bottom));
+    border: 1px solid var(--glass-stroke-bottom);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    transition: transform .15s ease;
+  }
+
+  nav a:hover { transform: translateY(-1px); }
+
+  /* ---- Khối nội dung ---- */
+  section { padding: 24px; margin-bottom: 20px; scroll-margin-top: 20px; }
+
+  h2 {
+    margin: 0 0 6px;
+    font-size: clamp(20px, 4vw, 24px);
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+  }
+
+  h3 {
+    margin: 26px 0 6px;
+    font-size: 17px;
+    color: var(--text-primary);
+  }
+
+  h3:first-of-type { margin-top: 18px; }
+
+  p { margin: 0 0 12px; }
+
+  ul { margin: 0 0 12px; padding-left: 22px; }
+
+  li { margin-bottom: 8px; }
+
+  strong { color: var(--text-primary); }
+
+  a { color: var(--primary); }
+
+  .lead {
+    padding: 14px 16px;
+    margin: 0 0 4px;
+    border-radius: 16px;
+    background: rgba(47, 107, 255, .08);
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .note {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--divider);
+    font-size: 14px;
+    color: var(--text-tertiary);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-tertiary);
+    padding: 8px 12px 0;
+  }
+
+  footer a { font-weight: 600; text-decoration: none; }
+
+  @media (max-width: 480px) {
+    section { padding: 20px 18px; }
+    body { padding: 0 12px 48px; }
+  }
+
+  @media print {
+    body { background: #fff; color: #222; padding: 0; }
+    body::before, nav, .glass::before, .glass::after, .edge { display: none; }
+    section { box-shadow: none; border: 1px solid #ddd; background: #fff; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <header>
+    <svg class="app-icon" viewBox="0 0 108 108" role="img" aria-label="Biểu tượng Chăm Xe Việt">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4C6FFF"/>
+          <stop offset="1" stop-color="#7B5CFF"/>
+        </linearGradient>
+      </defs>
+      <rect width="108" height="108" rx="26" fill="url(#bg)"/>
+      <path d="M39.00,79.98 C27.24,73.19 21.51,59.35 25.02,46.24 C28.54,33.12 40.42,24.00 54.00,24.00 C67.58,24.00 79.46,33.12 82.98,46.24 C86.49,59.35 80.76,73.19 69.00,79.98" fill="none" stroke="#FFB020" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(35.4,35.4) scale(1.55)">
+        <path d="M18.92,6.01C18.72,5.42 18.16,5 17.5,5h-11c-0.66,0 -1.21,0.42 -1.42,1.01L3,12v8c0,0.55 0.45,1 1,1h1c0.55,0 1,-0.45 1,-1v-1h12v1c0,0.55 0.45,1 1,1h1c0.55,0 1,-0.45 1,-1v-8l-2.08,-5.99zM6.5,16c-0.83,0 -1.5,-0.67 -1.5,-1.5S5.67,13 6.5,13s1.5,0.67 1.5,1.5S7.33,16 6.5,16zM17.5,16c-0.83,0 -1.5,-0.67 -1.5,-1.5s0.67,-1.5 1.5,-1.5 1.5,0.67 1.5,1.5 -0.67,1.5 -1.5,1.5zM5,11l1.5,-4.5h11L19,11L5,11z" fill="#FFFFFF"/>
+      </g>
+    </svg>
+    <div>
+      <h1>Chăm Xe Việt</h1>
+      <p class="tagline">Chính sách quyền riêng tư &amp; Điều khoản sử dụng</p>
+      <span class="updated">Cập nhật ngày 17/09/2026</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#quyen-rieng-tu">Chính sách quyền riêng tư</a>
+    <a href="#dieu-khoan">Điều khoản sử dụng</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <section class="glass" id="quyen-rieng-tu">
+    <span class="edge"></span>
+    <h2>Chính sách quyền riêng tư</h2>
+
+    <p class="lead">
+      Chăm Xe Việt là ứng dụng chạy trên máy. Chúng tôi không vận hành máy chủ lưu dữ liệu xe của bạn,
+      không yêu cầu tài khoản và không bán dữ liệu cho bên thứ ba.
+    </p>
+
+    <h3>Dữ liệu lưu trên máy</h3>
+    <p>
+      Thông tin xe, lịch bảo dưỡng, giấy tờ, nhật ký chi phí, ảnh chụp và cài đặt nhắc lịch được lưu trong
+      vùng nhớ riêng của ứng dụng trên máy bạn. Chỉ bạn xem được, trừ khi bạn tự chia sẻ file sao lưu hoặc
+      file PDF ra ngoài.
+    </p>
+
+    <h3>Quyền ứng dụng xin</h3>
+    <ul>
+      <li><strong>Vị trí:</strong> chỉ đọc khi bạn mở màn hình tìm garage, trạm xăng, trạm sạc, cứu hộ quanh đây;
+        dùng để tìm địa điểm gần bạn và không được lưu lại.</li>
+      <li><strong>Máy ảnh và thư viện ảnh:</strong> để bạn chụp hoặc chọn ảnh xe, ảnh hoá đơn, ảnh giấy tờ;
+        ảnh được chép vào vùng nhớ riêng của ứng dụng.</li>
+      <li><strong>Thông báo:</strong> để nhắc lịch bảo dưỡng và hạn giấy tờ. Thông báo được tạo ngay trên máy,
+        không qua máy chủ.</li>
+    </ul>
+
+    <h3>Kết nối ra ngoài</h3>
+    <p>Ứng dụng chỉ gọi mạng trong hai trường hợp:</p>
+    <ul>
+      <li><strong>Tìm địa điểm quanh bạn</strong> qua dữ liệu bản đồ mở OpenStreetMap (Overpass API và tile bản đồ).
+        Toạ độ gần đúng của bạn được gửi kèm để tìm kiếm.</li>
+      <li><strong>Hiển thị quảng cáo</strong> qua Google AdMob khi máy có mạng. Ứng dụng chỉ yêu cầu quảng cáo
+        không cá nhân hoá (non-personalized ads), không xin quyền theo dõi (App Tracking Transparency) và không
+        dùng dữ liệu xe của bạn để nhắm quảng cáo. Xem thêm
+        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">chính sách của Google</a>.</li>
+    </ul>
+
+    <h3>Sao lưu và chia sẻ</h3>
+    <p>
+      File sao lưu <code>.cxvbackup</code> <strong>chưa được mã hoá</strong> và chứa cả ảnh giấy tờ lẫn số giấy tờ,
+      nên hãy cất ở nơi riêng tư. File sao lưu và file PDF sổ bảo dưỡng do bạn chủ động tạo. Ứng dụng chỉ chuyển
+      file cho hệ thống để bạn chọn nơi lưu hoặc ứng dụng nhận.
+    </p>
+    <p>
+      Trên Android, ứng dụng đã tắt sao lưu tự động lên Google Drive (<code>dataExtractionRules</code> loại trừ toàn bộ
+      dữ liệu khỏi cloud backup). Dữ liệu chỉ rời khỏi máy khi bạn tự tạo file sao lưu, hoặc khi bạn dùng tính năng
+      chuyển thẳng dữ liệu sang máy mới của hệ điều hành — quá trình này không đi qua máy chủ của chúng tôi.
+    </p>
+
+    <h3>Xoá dữ liệu</h3>
+    <p>
+      Bạn có thể xoá từng xe, từng dòng nhật ký, từng giấy tờ ngay trong ứng dụng. Gỡ cài đặt ứng dụng sẽ xoá toàn bộ
+      dữ liệu trên máy. Vì chúng tôi không giữ bản sao trên máy chủ nên không có dữ liệu nào để xoá ở phía chúng tôi.
+    </p>
+
+    <h3>Trẻ em</h3>
+    <p>
+      Ứng dụng dành cho người lái xe, không hướng tới trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.
+    </p>
+
+    <h3>Thay đổi và liên hệ</h3>
+    <p>
+      Khi chính sách thay đổi, bản mới sẽ kèm theo bản cập nhật ứng dụng và ghi rõ ngày cập nhật ở đầu trang.
+      Mọi câu hỏi về quyền riêng tư xin gửi tới <a href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com</a>.
+    </p>
+  </section>
+
+  <section class="glass" id="dieu-khoan">
+    <span class="edge"></span>
+    <h2>Điều khoản sử dụng</h2>
+
+    <h3>Chấp nhận điều khoản</h3>
+    <p>
+      Khi cài đặt và sử dụng Chăm Xe Việt, bạn đồng ý với các điều khoản dưới đây. Nếu không đồng ý, vui lòng gỡ ứng dụng.
+    </p>
+
+    <h3>Ứng dụng làm gì</h3>
+    <p>
+      Ứng dụng giúp bạn ghi chép và theo dõi việc chăm sóc xe: lịch bảo dưỡng, hạn giấy tờ, nhật ký chi phí và tra cứu
+      thông số xe. Dữ liệu do bạn nhập và lưu trên máy của bạn.
+    </p>
+
+    <h3>Trách nhiệm của bạn</h3>
+    <p>
+      Bạn chịu trách nhiệm về tính chính xác của dữ liệu mình nhập và về việc sao lưu dữ liệu. Mất máy, hỏng máy hoặc
+      gỡ ứng dụng mà chưa sao lưu sẽ dẫn tới mất dữ liệu và không thể khôi phục.
+    </p>
+
+    <h3>Nhắc lịch chỉ mang tính tham khảo</h3>
+    <p>
+      Chu kỳ bảo dưỡng và thông số kỹ thuật trong ứng dụng được tổng hợp từ tài liệu phổ biến của các hãng và có thể khác
+      với xe thực tế của bạn. Hãy luôn theo sổ tay chủ xe và khuyến cáo của garage. Chúng tôi không chịu trách nhiệm cho
+      hư hỏng, chi phí hay thiệt hại phát sinh từ việc dựa hoàn toàn vào nhắc lịch của ứng dụng.
+    </p>
+
+    <h3>Địa điểm quanh đây</h3>
+    <p>
+      Danh sách garage, trạm xăng, trạm sạc, cứu hộ lấy từ dữ liệu bản đồ mở OpenStreetMap do cộng đồng đóng góp
+      (© OpenStreetMap contributors, giấy phép ODbL), có thể thiếu hoặc chưa cập nhật. Hãy gọi xác nhận trước khi tới.
+    </p>
+
+    <h3>Quảng cáo và gói Premium</h3>
+    <p>
+      Phiên bản miễn phí hiển thị quảng cáo khi máy có mạng. Gói Premium gỡ quảng cáo và mở thêm tính năng; việc thanh
+      toán, hoàn tiền do Google Play hoặc App Store xử lý theo chính sách của họ.
+    </p>
+
+    <h3>Luật áp dụng</h3>
+    <p>
+      Điều khoản này tuân theo pháp luật Việt Nam. Liên hệ:
+      <a href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com</a>.
+    </p>
+
+    <p class="note">
+      Bản trong ứng dụng nằm ở <strong>Cá nhân → Điều khoản &amp; quyền riêng tư</strong> và có nội dung giống hệt trang này.
+    </p>
+  </section>
+
+  <footer id="lien-he">
+    <p>
+      Chăm Xe Việt • Hỗ trợ: <a href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com</a><br>
+      Cập nhật ngày 17/09/2026
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
