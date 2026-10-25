@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+  Landing page source for 1% HUMAN.
+  Publish as projects/oddly/index.html in the repo lil-dua.github.io.
+  The published URL must match Brand.WEBSITE_URL (https://lil-dua.github.io/projects/oddly/):
+  it is printed on share cards and in share captions, the Support URL and Marketing URL.
+  TODO (T-17): replace the "Coming soon" App Store line with the real link once the app has an ID.
+-->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1% HUMAN</title>
+<style>
+  :root { --bg:#0B0A12; --surface:#16141F; --border:#262336; --text:#F2F0F7; --muted:#A8A3BC; --accent:#B57BFF; --accent-2:#FF7BC5; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0 20px 80px; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+  main { max-width:720px; margin:0 auto; }
+  header { padding:56px 0 24px; text-align:center; }
+  .brand { font-size:38px; font-weight:800; letter-spacing:-0.5px; margin:0;
+    background:linear-gradient(90deg,var(--accent-2),var(--accent));
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { color:var(--muted); margin:8px 0 0; }
+  section { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:20px 24px; margin:20px 0; }
+  h2 { font-size:15px; margin:0 0 8px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  ul { margin:0; padding-left:20px; }
+  a { color:var(--accent); }
+  .soon { color:var(--muted); }
+  footer { text-align:center; color:var(--muted); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 class="brand">1% HUMAN</h1>
+    <p class="sub">Mỗi ngày một thử thách nhỏ. Tốt hơn 1% mỗi ngày.</p>
+  </header>
+
+  <section>
+    <h2>Tải ứng dụng</h2>
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=dev.lildua.oddly">Google Play</a></li>
+      <!-- Replace with the App Store link when the app has an ID (T-17). -->
+      <li class="soon">App Store: sắp có</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Thông tin</h2>
+    <p>Ứng dụng hoạt động hoàn toàn ngoại tuyến, không tài khoản, không thu thập dữ liệu.</p>
+    <ul>
+      <li><a href="privacy/privacy-policy.html">Chính sách quyền riêng tư</a></li>
+      <li>Liên hệ &amp; góp ý: <a href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <hr style="border:0;border-top:1px solid var(--border);margin:40px 0">
+
+  <div lang="en">
+    <header style="padding-top:0">
+      <p class="sub">One small challenge a day. 1% better every day.</p>
+    </header>
+
+    <section>
+      <h2>Get the app</h2>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=dev.lildua.oddly">Google Play</a></li>
+        <li class="soon">App Store: coming soon</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Info</h2>
+      <p>The app works entirely offline: no account, no data collection.</p>
+      <ul>
+        <li><a href="privacy/privacy-policy.html">Privacy policy</a></li>
+        <li>Contact &amp; feedback: <a href="mailto:huuthom.it@gmail.com">huuthom.it@gmail.com</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>Phát triển bởi / Developed by Lil Dua</footer>
+</main>
+</body>
+</html>
